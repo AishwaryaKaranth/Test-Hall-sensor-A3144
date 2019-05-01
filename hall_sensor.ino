@@ -10,9 +10,9 @@ void setup() {
 void loop() {
   hallPin= digitalRead(hall_sensor);
   if(hallPin == HIGH){
-    digitalWrite(led, LOW);
+    digitalWrite(led, LOW); //goes low when it senses magnetic field in its vicinity
   }
   else{
-    digitalWrite(led, HIGH);
+    digitalWrite(led, HIGH);//goes high when it does not sense magnetic field.
   }
 }
